@@ -1,0 +1,145 @@
+:root{
+
+    --cor01: #fe6100;
+    --cor02: black;
+    --cor03: #ffa101;
+    --cor04: #Ffff;
+    --bacgkground-card: black;
+    --backgroud:#FBDEBE;
+    --cor-nav: #fff;
+}
+
+
+
+.darkMode:root{
+
+    --cor01: #fe6100;
+    --cor02: #fff;
+    --cor03: #ffa101;
+    --cor04: #Ffff;
+    --bacgkground-card: transparent;
+    --backgroud:black;
+    --cor-nav: #161616;
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color:#FBDEBE;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family:"Poppis", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-nav);
+    height: 48px;
+}
+
+.name-logo{
+    font-weight: 700;
+    font-size: large;
+    color: var(--cor01);
+    padding-left: 70px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.container-nav-links{
+    padding-right: 100px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.container-nav-links ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--cor01);
+    font-weight: 700;
+    font-size: large;
+    transition: 0.3s;
+
+}
+
+
+.container-accessibility{
+    position: fixed;
+    z-index: 999;
+    
+}
+
+.button-accessibility{
+    border: 1px solid white;
+    background-color: rgb(5, 5, 86);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+.nav-links:hover{
+    color: var(--cor02);
+    
+}
+
+
+@media (max-width:710px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        height: 70px;
+    }
+
+    .container-nav-links{
+        padding-right: 0;
+        margin-top: 10px;
+    }
+
+    .name-logo{
+        padding-left: 0;
+    }
+}
+.log{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 825px;
+    top: 100px;
+}
+.promo{
+    color: #fe6100;
+    position: fixed;
+    left: 840px;
+    top: 400px;
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 3px;
+}
+.promoc{
+    padding: 20px;
+    width: 300px;
+    background-color: #161616;
+    background-size: 100px 200px;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 400px;
+    border-radius: 20px;
+}
+footer{
+    color: grey;
+    background-color: #fff;
+    align-items: center;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 750px;
+}
